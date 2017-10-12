@@ -1,22 +1,182 @@
 <!doctype html>
+<!-- http://materializecss.com/ -->
+
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Color Scheme Switcher</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <title>yourtraveler</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ribeye+Marrow" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/normalize.css" media="screen" type="text/css" />
+
+<!--       <link rel="stylesheet" href="css/reset.css" media="screen" type="text/css" /> -->
 </head>
-<body>
+<body class="container">
+    <header>
+      <div class="headerdiv">
+        <h1 class="logo">yourtraveler</h1>
+        <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Explor</a></li>
+          <li><a href="#">Reward</a></li>
+        </ul>
+        </nav>
+      </div>
+  </header>
+    <div id="main">
+      <!-- <div class="serachwrapper"> -->
+        <div class="serachwrapperP">
+        <div class="serach">
+            <p id="seach-paragraph">Start Your Dream Vacation!
+            <span>check on &nbsp;<a href="#google-map" id="google_"> Google </a>&nbsp; Map</span>
+            </p>
+            <p id="serach-city-top">Search City:</p>
 
-  <ul id="switcher">
-    <li id="grayButton"></li>
-    <li id="whiteButton"></li>
-  </ul>
+          <div class="serach-box">
+          <input type="text" id="serach-box" placeholder="Destination">
+          </div>
+          <div class="serach-top">Dates:</div>
+          <div class="date-picker">
 
-  <h1>Color Scheme Switcher</h1>
+            <div class="start-date">
+              <input type="date" name="startdate" class="date-pick">
+            </div>
 
-  <p>Try clicking on one of the colors above to change the colors on this page!</p>
+            <div class="end-date">
+              <input type="date" name="enddate" class="date-pick">
+            </div>
 
-  <script src="js/script.js"></script>
-
+          </div>
+          <div class="submit-buttond">
+            <input type="submit" value="Search Hotels" id="submit-btn">
+          </div>
+        </div>
+        </div>
+          <div class="promo-class">
+             <p class="promo-Section">
+                 <span id="p1">Best Price.&nbsp;</span>
+                 <span id="p2">GUARANTEED.&nbsp;</span>
+                 We guarantee the lowest price on
+                 every trip you book.
+            </p>
+          </div>
+          <div id="promo">
+            <a  href="#">
+              Sign Up Now and save 20% on your Next Trip!
+            </a>
+          </div>
+          <section id="hot-places-section">
+            <div id="hot-places-container">
+              <div id="hot-places1">
+                   <div id="hot-places1-1">
+                       <img class="img-responsive" src="images/las-vegas-2.jpg">
+                        <div class='losvegas-text-p'>
+                          <p class='inside-p'> Los Vegas</p>
+                        </div>
+                  </div>
+                  <div id="hot-places1-2">
+                      <div id="hot-places1-2-inside-1">
+                         <img class="img-responsive" src="images/NY-s.jpg">
+                         <div class='NY-text-p'>
+                           <p class='inside-p'>New York</p>
+                         </div>
+                     </div>
+                     <div id="hot-places1-2-inside-2">
+                       <img class="img-responsive" src="images/LA-2.jpg">
+                       <div class='LA-text-p'>
+                         <p class='inside-p'>Los Angeles</p>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div id="hot-places2">
+                  <div id="hot-places2-1-inside-1">
+                     <img class="img-responsive" src="images/paris-3.jpg">
+                     <div class='paris-text-p'>
+                       <p class='inside-p'>Paris</p>
+                     </div>
+                 </div>
+                 <div id="hot-places2-2-inside-2">
+                   <img class="img-responsive" src="images/london-2.jpg">
+                   <div class='london-text-p'>
+                     <p class='inside-L'>London</p>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <!-- <section id="demo">
+          <div id="demo-div">
+            <div class="show-case1"></div>
+            <div class="show-case2"></div>
+            <div class="show-case3"></div>
+            <div class="show-case4"></div>
+          </div>
+        </section> -->
+        <section name="google-link" id="google-map"></section>
+        <!-- <section id="filler"><p> Some Random text</p></section> -->
+    <!-- </div> -->
+  </div>
+  <footer>
+    <div class="footer-ul-wrapper">
+    <p>All the content on this web page is for demonstration Only, no actual reservation is taken place!</p>
+    <div class="footer-cols">
+      <strong class="footer-col-header">Our Products</strong>
+      <ul>
+        <li>Hotel Express_ Deals</li>
+        <li>Name Your Own Price</li>
+        <li>Hotel winning bids</li>
+        <li>Rental car winning bids</li>
+        <li>Flights winning bids</li>
+        <li>Travel guides</li>
+      </ul>
+    </div>
+    <div class="footer-cols">
+      <strong class="footer-col-header">About Priceline</strong>
+      <ul>
+        <li>Contact us</li>
+        <li>Media center</li>
+        <li>Investor relations</li>
+        <li>Terms and conditions</li>
+        <li>Privacy policy</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+    <div class="footer-cols">
+      <strong class="footer-col-header">Partner with Priceline</strong>
+      <ul>
+        <li>Add your hotel</li>
+        <li>Priceline Partner Network</li>
+        <li>Advertise</li>
+      </ul>
+    </div>
+    <div class="footer-cols-right">
+      <strong class="footer-col-header">Connect with Priceline
+</strong>
+      <ul>
+        <li>Contact us</li>
+        <li>Media center</li>
+        <li>Investor relations</li>
+        <li>Terms and conditions</li>
+        <li>Privacy policy</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+    </div>
+  </footer>
+   <script src="js/script.js"></script>
+ <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevBmXeYDE21R0TE3dGQCHeGP2j-Lk1SU&callback=initMap">
+</script>
+ </script>
 </body>
 </html>
