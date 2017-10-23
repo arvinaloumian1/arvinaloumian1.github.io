@@ -346,27 +346,49 @@ float: left;
 .hotel-result-deteil{
 	height: 100%;
 	width:48%;
-	/*background-color: green;*/
+	padding: 1vh 1vw;
 	float: left;
 	position: relative;
+	font-family: 'Indie', sans-serif;	 
+	font-size: 2em;
 }
-.hotel-result-price{
-	height: 100%;
-	width:21.5%;
-	background-color: #f2f2f2;
-	float: right;
-	/*line-height: 20px;*/
-	/*padding: 5% 0;*/
-	/*vertical-align: middle;*/
-	/*border: 1px solid black;*/
+.hotel-result-deteil p{
+	margin: 5px auto;
+}
+
+#hotel-name{
+		font-size: 1em;
+	font-weight: bold;
+	color: rgba(0,0,0,.9);
+}
+#hotel-distance{
+	font-size: .7em;
+	font-weight: bold;
+	color: rgba(0,0,0,.6);
+}
+
+#hotel-amenities{
+	 font-family: 'Anton', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+   font-size: .7em;
+   color: rgba(0,0,0,.8);
+}
+
+#hotel-cancellation{
+	font-size: .7em;
+	font-weight: bold;
+	color: rgba(0,0,0,.9);
+}
+#hotel-watch{
+		font-size: .6em;
+	font-weight: bold;
+	color: rgb(157, 0, 0);
 }
 
 .rate-container{
-	width: 20%;
-	height: 20%;
-	/*line-height: 20%;*/
-	background-color: orange;
-	color: white;
+	width: 12%;
+	height: 12%;
 	border-radius: 5px;
 	text-align: center;
 	vertical-align: middle;
@@ -376,9 +398,35 @@ float: left;
 	justify-content: center; /* align horizontal */
 	align-items: center; /* align vertical */
 	margin-left: 10px;
+	background-color: orange;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1em;     
 }
-.rate-container-text{
+.guest-rating-holder{
+	height: 12%;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 20px;
+	left: 18%;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+	margin-left: 10px;
+	font-size: .65em;
+	font-weight: bold;
+	color: rgba(0,0,0,.6);
+	 
+}
+.hotel-result-price{
+	height: 100%;
+	width:21.5%;
+	background-color: #f2f2f2;
+	float: right;
 	/*line-height: 20px;*/
+	/*padding: 5% 0;*/
+	/*vertical-align: middle;*/
 	/*border: 1px solid black;*/
 }
 /********************main-result***********************/
