@@ -13,9 +13,11 @@
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i,300i,400" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" media="screen" type="text/css" />
-
+    <link rel="stylesheet" href="css/promo-signup-section.css" media="screen" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--       <link rel="stylesheet" href="css/reset.css" media="screen" type="text/css" /> -->
 </head>
 <body class="container">
@@ -32,8 +34,10 @@
         </nav>
       </div>
   </header>
-    <div id="main">
-      <!-- <div class="serachwrapper"> -->
+
+<!--**************************** MAIN BODY*************************-->
+  <div id="main">
+      <!--********************** SEARCH *********************-->
         <div class="serachwrapperP">
         <div class="serach">
             <p id="seach-paragraph">Start Your Dream Vacation!
@@ -61,7 +65,11 @@
           </div>
         </div>
         </div>
-          <div class="promo-class">
+    <!--********************** SEARCH *********************-->
+
+
+    <!--************* PROMOTION *********************-->
+          <!-- <div class="promo-class"> -->
              <p class="promo-Section">
                  <span id="p1">Best Price.&nbsp;</span>
                  <span id="p2">GUARANTEED.&nbsp;</span>
@@ -69,11 +77,74 @@
                  every trip you book.
             </p>
           </div>
-          <div id="promo">
-            <a  href="#">
+<!--     <div id="promo">
+            <button id="promo-link-pop-btn">Open Modal</button>
+            <a id="promo-link-pop" href="#" target="">
               Sign Up Now and save 20% on your Next Trip!
             </a>
-          </div>
+    </div> -->
+    <div id="promo-btn-wrapper">
+      <button id="promo-btn-pop">
+        Sign Up Now and save 20% on your Next Trip!
+      </button>
+    </div>
+    <!--************* PROMOTION *********************-->
+   <div id="modal-main" class="modal">
+        <div id="close-wraper" >
+         <span class="modal-close">&times;</span>
+        </div>
+ <!--************* SIGN IN pop up*********************-->
+      <div id="modal-form">
+        <form action="" name="registration" id="register">
+            
+                <div class="form-group">
+                  <div class="modal-form-label"> 
+                    <label for="user">Name:</label>
+                  </div>
+                  <div class="modal-form-input">  
+                    <input class="modal2-input" type="text" placeholder="Name" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="modal-form-label"> 
+                    <label for="user">User Name:</label>
+                  </div>
+                  <div class="modal-form-input">  
+                    <input class="modal2-input" type="text" placeholder="User Name" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="modal-form-label">  
+                    <label for="useremail">Email:</label>
+                  </div>
+                  <div class="modal-form-input"> 
+                    <input class="modal2-input" type="text" placeholder="Enter Email" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="modal-form-label">   
+                    <label for="pass">Password:</label>
+                  </div>
+                  <div class="modal-form-input">  
+                    <input class="modal2-input" type="password" placeholder="Enter password" required>
+                  </div>
+                </div>
+                <div class="form-group"> 
+                <div class="btn-wrapper">
+                    <input class="input-cancel-btn" type="submit" name="Cancel"  value="Cancel">  
+                    <input class="input-submit-btn" type="submit" name="Sign Up"  value="Sign Up"> 
+                  </div> 
+                </div> 
+                   
+            <!-- </fieldset> -->
+        </form>
+      </div>
+      <!--************* SIGN IN pop up*********************-->
+    </div>
+    
+
+
+    <!--********************** RECOMMANDED PLACES *********************-->
           <section id="hot-places-section">
             <div id="hot-places-container">
               <div id="hot-places1">
@@ -114,18 +185,17 @@
               </div>
             </div>
           </section>
-        <!-- <section id="demo">
-          <div id="demo-div">
-            <div class="show-case1"></div>
-            <div class="show-case2"></div>
-            <div class="show-case3"></div>
-            <div class="show-case4"></div>
-          </div>
-        </section> -->
-        <section name="google-link" id="google-map"></section>
-        <!-- <section id="filler"><p> Some Random text</p></section> -->
-    <!-- </div> -->
+    <!--********************** RECOMMANDED PLACES *********************-->
+ 
+
+    <!--********************** GOOGLE MAP*********************-->
+    <section name="google-link" id="google-map"></section>
+    <!--********************** GOOGLE MAP*********************-->        
+
   </div>
+<!--**************************** MAIN BODY*************************-->
+  
+
   <footer>
     <div class="footer-ul-wrapper">
     <p>All the content on this web page is for demonstration Only, no actual reservation is taken place!</p>
@@ -173,6 +243,8 @@
     </div>
     </div>
   </footer>
+
+
    <script src="js/script.js"></script>
  <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevBmXeYDE21R0TE3dGQCHeGP2j-Lk1SU&callback=initMap">

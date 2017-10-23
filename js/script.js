@@ -2,7 +2,7 @@
 
 
 $(document).ready(function(){
-  initMap();
+   initMap();
 	// $(".readmore a").click(showHidenP);
 });
 function initMap() {
@@ -18,6 +18,50 @@ function initMap() {
   map: map
 });
 }
+
+// Get the modal
+var modal1 = document.getElementById('modal-main');
+
+// Get the button that opens the modal
+var btn = document.getElementById("promo-btn-pop");
+// var btn = document.getElementById("promo-link-pop-btn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("modal-close")[0];
+//var span = document.getElementById("modal-close");
+
+var cancelbtn=document.getElementsByClassName("input-cancel-btn")[0];
+
+btn.onclick = function() {
+   //alert("w");
+    modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal1.style.display = "none";
+}
+
+cancelbtn.onclick = function() {
+    modal1.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  //alert("clicked captr");
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+// $("#promo-link-pop" ).click(function() {
+//   alert( "Handler for .click() called." );
+// });
+
+// $("#promo-link-pop").click(function(){
+//  $("sign-up-pop_wrapper").css("display", "block");
+
+//  alert("fe");
+// });
+
 // var grayClick = function(){
 // 	document.body.style.backgroundColor = 'gray';
 // }
