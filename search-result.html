@@ -17,7 +17,8 @@
   <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i,300i,400" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+
   <link rel="stylesheet" href="css/search-style.css" media="screen" type="text/css" />
   <link rel="stylesheet" href="css/normalize.css" media="screen" type="text/css" />
   <link rel="stylesheet" href="css/promo-signup-section.css" media="screen" type="text/css" />
@@ -121,16 +122,55 @@
           <div class="count">(19)</div>
         </div>
         <div id="price-filter" class="side-content-deteil clearfix"></div>
-        <div id="amenities" class="side-content-deteil clearfix">
-          <input class="amenities-checkbox" type="checkbox" ng-checked="sopqFilterCheck">
-          <div id="amenities-wireless" class="clearfix">
-            <img class="img-responsive" src="images/wireless2.jpg"> 
+        <div id="amenities" class="side-content-deteil  clearfix">
+         <p id="member-deal-p">Amenities</p>
+          <div class="amenities-holder clearfix">
+              <input class="amenities-checkbox" type="checkbox" ng-checked="sopqFilterCheck">
+              <div id="amenities-wireless" class="clearfix">
+              <img class="img-responsive" src="images/wireless2.jpg">
+              </div>
+              <div class="amanities-text">Free Internet</div> 
+              <div class="count">(19)</div>
+          </div>
+          <div class="amenities-holder clearfix">
+              <input class="amenities-checkbox" type="checkbox" ng-checked="sopqFilterCheck">
+              <div id="amenities-wireless" class="clearfix">
+              <img class="img-responsive" src="images/parking29_6837.jpg">
+              </div>
+              <div class="amanities-text">Free Parking</div> 
+              <div class="count">(23)</div>
+          </div>
+          <div class="amenities-holder clearfix">
+             <input class="amenities-checkbox" type="checkbox" ng-checked="sopqFilterCheck">
+              <div id="amenities-wireless" class="clearfix">
+              <img class="img-responsive" src="images/coffee.jpg">
+              </div>
+            <div class="amanities-text">Free Breakfast</div> 
+            <div class="count">(9)</div>
           </div>
         </div>
       </aside>
-      <section id="main-result"></section>
+      <section id="main-result">
+        <div class="hotel-result-holder clearfix" >
+          <div class="hotel-img-holder clearfix" >
+            <img class="hotel-img-responsive" src="hotel-search-image/courtyard.jpg">
+          </div>
+          <div class="hotel-result-deteil">
+            <p>Courtyard</p>
+            <p>0.94 miles from Los Angeles Intl Airport</p>
+            <p>Free Internet, Airport Shuttle, Fitness Center</p>
+            <p>&#10004 Free Cancellation, Pay Later Available</p>
+            <div class="rate-container">6.9
+              <!-- <div class="hotel-result-price-text">6.9</div> -->
+            </div>
+          </div>
+          <div class="hotel-result-price">
+              
+          </div>
+        </div>
+      </section>
     </div>
-    <script src="js/script-search.js"></script>
+    <script src="js/script-search.js"></script>    
   </body>
 </html>
    

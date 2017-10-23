@@ -24,7 +24,6 @@ function initMap() {
 var searchbutton = document.getElementsByClassName("submit-buttond")[0];
 
 searchbutton.onclick=function(){
-  alert("wd");
 window.open("search-result.html","_self");
 }
 
