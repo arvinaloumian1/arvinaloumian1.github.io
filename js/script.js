@@ -19,6 +19,15 @@ function initMap() {
 });
 }
 
+
+// Get the submit button
+var searchbutton = document.getElementsByClassName("submit-buttond")[0];
+
+searchbutton.onclick=function(){
+  alert("wd");
+window.open("search-result.html","_self");
+}
+
 // Get the modal
 var modal1 = document.getElementById('modal-main');
 
@@ -52,35 +61,4 @@ window.onclick = function(event) {
         modal1.style.display = "none";
     }
 }
-// $("#promo-link-pop" ).click(function() {
-//   alert( "Handler for .click() called." );
-// });
-
-// $("#promo-link-pop").click(function(){
-//  $("sign-up-pop_wrapper").css("display", "block");
-
-//  alert("fe");
-// });
-
-// var grayClick = function(){
-// 	document.body.style.backgroundColor = 'gray';
-// }
-
-// grayButton.onclick = grayClick;
-
-// var whiteButton = document.getElementById('whiteButton');
-
-// var whiteClick = function(){
-// 	document.body.style.backgroundColor = 'black';
-// 	document.querySelector('h1').style.color = 'white';
-// 	document.querySelector('p').style.color = 'white';
-// }
-
-// whiteButton.onclick = whiteClick;
-
-// $(window).load(function(){
-//  $('.container').find('img').each(function(){
-//   var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
-//   $(this).addClass(imgClass);
-//  })
-// })
+ 
