@@ -2,8 +2,29 @@
 
 
 $(document).ready(function(){
-   initMap();
+  // initMap();
 	// $(".readmore a").click(showHidenP);
+var searchbuttonID = document.getElementById("submit-btn");
+
+console.log(searchbuttonID);
+
+searchbuttonID.onclick=function(e){
+  // e.preventDefault();
+  var searchValue=$("#serach-box").val();
+  
+  if (searchValue.trim()=="")
+   {
+    alert("Please Enter a City Name!");    
+   }
+   else if(searchValue.trim().toLowerCase()=="los angeles"
+    || searchValue.trim().toLowerCase()=="la"){
+    window.open("search-result.html","_self");
+   }
+      else if(searchValue.trim().toLowerCase()=="new york"
+    || searchValue.trim().toLowerCase()=="ny"){
+    window.open("search-result-NY.html","_self");
+   }
+ }
 });
 function initMap() {
        var uluru = {lat: 33.8479634, lng: -117.2270496};
@@ -19,13 +40,21 @@ function initMap() {
 });
 }
 
+// var searchValue_=document.getElementById("serach-box").value;
+// // Get the submit button
+// var searchbutton = document.getElementsByClassName("submit-buttond")[0];
+// var searchbuttonID = document.getElementById("submit-btn");
 
-// Get the submit button
-var searchbutton = document.getElementsByClassName("submit-buttond")[0];
+// searchbuttonID.onclick=function(){
+//   alert(searchValue_);
+// }
 
-searchbutton.onclick=function(){
-window.open("search-result.html","_self");
-}
+// searchbutton.onclick=function(){
+//   //alert(searchValue_);
+//  //document.getElementById("p1").innerHTML = searchValue_;
+// //  if (true) {}
+// //window.open("search-result.html","_self");
+// }
 
 // Get the modal
 var modal1 = document.getElementById('modal-main');
