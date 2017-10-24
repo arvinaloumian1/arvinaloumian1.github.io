@@ -2,8 +2,29 @@
 
 
 $(document).ready(function(){
-   initMap();
+  // initMap();
 	// $(".readmore a").click(showHidenP);
+var searchbuttonID = document.getElementById("submit-btn");
+
+console.log(searchbuttonID);
+
+searchbuttonID.onclick=function(e){
+  // e.preventDefault();
+  var searchValue=$("#serach-box").val();
+  
+  if (searchValue.trim()=="")
+   {
+    alert("Please Enter a City Name!");    
+   }
+   else if(searchValue.trim().toLowerCase()=="los angeles"
+    || searchValue.trim().toLowerCase()=="la"){
+    window.open("search-result.html","_self");
+   }
+      else if(searchValue.trim().toLowerCase()=="new york"
+    || searchValue.trim().toLowerCase()=="ny"){
+    window.open("search-result-NY.html","_self");
+   }
+ }
 });
 function initMap() {
        var uluru = {lat: 33.8479634, lng: -117.2270496};
@@ -18,6 +39,22 @@ function initMap() {
   map: map
 });
 }
+
+// var searchValue_=document.getElementById("serach-box").value;
+// // Get the submit button
+// var searchbutton = document.getElementsByClassName("submit-buttond")[0];
+// var searchbuttonID = document.getElementById("submit-btn");
+
+// searchbuttonID.onclick=function(){
+//   alert(searchValue_);
+// }
+
+// searchbutton.onclick=function(){
+//   //alert(searchValue_);
+//  //document.getElementById("p1").innerHTML = searchValue_;
+// //  if (true) {}
+// //window.open("search-result.html","_self");
+// }
 
 // Get the modal
 var modal1 = document.getElementById('modal-main');
@@ -52,35 +89,4 @@ window.onclick = function(event) {
         modal1.style.display = "none";
     }
 }
-// $("#promo-link-pop" ).click(function() {
-//   alert( "Handler for .click() called." );
-// });
-
-// $("#promo-link-pop").click(function(){
-//  $("sign-up-pop_wrapper").css("display", "block");
-
-//  alert("fe");
-// });
-
-// var grayClick = function(){
-// 	document.body.style.backgroundColor = 'gray';
-// }
-
-// grayButton.onclick = grayClick;
-
-// var whiteButton = document.getElementById('whiteButton');
-
-// var whiteClick = function(){
-// 	document.body.style.backgroundColor = 'black';
-// 	document.querySelector('h1').style.color = 'white';
-// 	document.querySelector('p').style.color = 'white';
-// }
-
-// whiteButton.onclick = whiteClick;
-
-// $(window).load(function(){
-//  $('.container').find('img').each(function(){
-//   var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
-//   $(this).addClass(imgClass);
-//  })
-// })
+ 
